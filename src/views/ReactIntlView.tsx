@@ -1,20 +1,16 @@
 import React, {useState} from 'react';
 import {FormattedDate, FormattedMessage, IntlProvider} from 'react-intl';
+import messagesEN from '../i18n/en/messages.json';
+import messagesRU from '../i18n/ru/messages.json';
 
 let i18nConfigRU = {
   locale: 'ru',
-  messages: {
-    "home.welcome": "Добро пожаловать, {name}!",
-    "home.bye": "Всего доброго!"
-  }
+  messages: messagesRU
 };
 
 let i18nConfigEN = {
   locale: 'en',
-  messages: {
-    "home.welcome": "Welcome, {name}!",
-    "home.bye": "Good bye!"
-  }
+  messages: messagesEN
 };
 
 export default function ReactIntlView() {
@@ -42,7 +38,7 @@ export default function ReactIntlView() {
         <button onClick={() => switchLocale(i18nConfigEN.locale)}>EN</button>
       </div>
       <div>
-        <FormattedMessage id="home.welcome" values={{name: "коллега"}}/>
+        <FormattedMessage id="home.welcome" values={{name: "X Æ A-Xii"}}/>
       </div>
       <div>
         <FormattedMessage id="home.bye"/>

@@ -1,0 +1,7 @@
+{
+   "localeDir": "src/i18n/",
+   "srcPathDirs": ["src/"],
+   "format": "minimal",
+   "fallbackLocale": "ru",
+   "sourceLocale": "ru"
+}
